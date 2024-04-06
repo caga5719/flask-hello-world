@@ -22,7 +22,7 @@ def create_db():
         Last varchar(255),
         City varchar(255),
         Name varchar(255),
-        Number int,
+        Number int
         );
     ''')
     conn.commit()
