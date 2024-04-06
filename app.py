@@ -51,7 +51,7 @@ def selecting():
     cur.execute('''
         SELECT * FROM Baskteball;
     ''')
-    record = curr.fetchall()
+    records = curr.fetchall()
     conn.close()
     response_string = ""
     response_string+="<table>"
