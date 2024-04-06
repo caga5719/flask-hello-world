@@ -49,7 +49,7 @@ def selecting():
     conn = psycopg2.connect("postgres://caga5719_db_user:jgk8px6kecbxYAT0FrhSwflb43dSlugL@dpg-co89c5tjm4es738vrjj0-a/caga5719_db")
     cur = conn.cursor()
     cur.execute('''
-        SELECT * FROM Baskteball;
+        SELECT * FROM Basketball;
     ''')
     records = curr.fetchall()
     conn.close()
