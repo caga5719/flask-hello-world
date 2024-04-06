@@ -13,7 +13,7 @@ def caga5719_db():
     conn.close()
     return "Database Connection Successful"
 
-@app.route('db_create')
+@app.route('/db_create')
 def create_db():
     conn = psycopg2.connect("postgres://caga5719_db_user:jgk8px6kecbxYAT0FrhSwflb43dSlugL@dpg-co89c5tjm4es738vrjj0-a/caga5719_db")
     cur = conn.cursor()
