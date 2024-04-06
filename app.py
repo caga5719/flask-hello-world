@@ -32,7 +32,7 @@ def create_db():
 @app.route("/db_insert")
 def inserting():
     conn = psycopg2.connect("postgres://caga5719_db_user:jgk8px6kecbxYAT0FrhSwflb43dSlugL@dpg-co89c5tjm4es738vrjj0-a/caga5719_db")
-    cur = conn.connect()
+    cur = conn.cursor()
     cur.execute('''
         INSERT INTO Basketball (First, Last, City, Name, Number) Values
         ('Jayson','Tatum','Boston','Celtics', 0),
